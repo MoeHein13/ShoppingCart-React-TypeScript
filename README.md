@@ -56,4 +56,4 @@ This project follows along with the Traversy Media React course, but with a few 
 
 ---
 
-_You can add screenshots or a live demo link here if you want!_
+
