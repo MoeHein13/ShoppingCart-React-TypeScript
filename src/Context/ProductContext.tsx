@@ -30,8 +30,11 @@ export const ProductProvider = ({ children }: ProductProviderProps) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const mainProducts = async () => {
+    const API_URL = import.meta.env.PROD
+      ? "https://shoppin-cart-vercel-api.vercel.app/"
+      : "/api";
     try {
-      const response = await axios.get("/api/products");
+      const response = await axios.get(`${API_URL}/products`);
       setProducts(response.data);
       // console.log(response.data);
     } catch (err: unknown) {
