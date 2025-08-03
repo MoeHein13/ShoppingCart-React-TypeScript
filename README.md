@@ -5,7 +5,7 @@ A simple Shopping Cart UI project built with **React 18** and **TypeScript**, in
 ## 🛒 Live Demo
 
 - **Frontend:**  
-  [https://MoeHein13.github.io/ShoppingCart-Ui-TypeScript/](https://MoeHein13.github.io/ShoppingCart-Ui-TypeScript/)
+  [https://MoeHein13.github.io/ShoppingCart-Ui-TypeScript/](https://MoeHein13.github.io/ShoppingCart-React-TypeScript/)
 - **API (Vercel serverless):**  
   [https://shoppin-cart-vercel-api.vercel.app/api/products](https://shoppin-cart-vercel-api.vercel.app/api/products)
 
