@@ -22,6 +22,7 @@ export type ProductProps = {
   category: string;
   rating: number;
   image: string;
+  qty?: number;
 };
 export const ProductContext = createContext<UserContextTypes | null>(null);
 
@@ -35,7 +36,6 @@ export const ProductProvider = ({ children }: ProductProviderProps) => {
     try {
       const response = await axios.get(`${API_URL}`);
       setProducts(response.data);
-      // console.log(response.data);
     } catch (err: unknown) {
       setError(
         err instanceof Error ? err.message : "Error Fetching Data Occurs"
